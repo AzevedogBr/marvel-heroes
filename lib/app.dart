@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'superherois',
       theme: ThemeData(
+        scaffoldBackgroundColor: const Color(0xffF5F5F5),
         fontFamily: 'Roboto',
         primarySwatch: Colors.blue,
         appBarTheme: const AppBarTheme(

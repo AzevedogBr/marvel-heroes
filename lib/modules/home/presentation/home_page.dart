@@ -110,12 +110,13 @@ class _HomePageState extends BasePage<HomePage, HomeViewmodel> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Padding(
-          padding: EdgeInsets.all(16.0),
+          padding: EdgeInsets.symmetric(horizontal: 32, vertical: 16.0),
           child: Text(
             'FEATURED CHARACTERS',
             style: TextStyle(
-              fontSize: 18,
+              fontSize: 15,
               fontWeight: FontWeight.bold,
+              height: 1.25,
             ),
           ),
         ),
@@ -148,8 +149,9 @@ class _HomePageState extends BasePage<HomePage, HomeViewmodel> {
               const Text(
                 'MARVEL CHARACTERS LIST',
                 style: TextStyle(
-                  fontSize: 18,
+                  fontSize: 15,
                   fontWeight: FontWeight.bold,
+                  height: 1.25,
                 ),
               ),
               const SizedBox(height: 8),
