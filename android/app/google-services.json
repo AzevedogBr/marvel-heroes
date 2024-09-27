@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "174652254445",
+    "project_id": "marvel-heores",
+    "storage_bucket": "marvel-heores.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174652254445:android:79ec26c230c686841184e4",
+        "android_client_info": {
+          "package_name": "com.example.superherois"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9PSgyoVGl9gg-VG6twkjGWLfU3avK9Ks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
