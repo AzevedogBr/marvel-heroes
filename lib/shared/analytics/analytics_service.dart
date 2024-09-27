@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/services.dart';
 
 abstract class AnalyticsService {
@@ -15,7 +17,7 @@ class AnalyticsServiceImpl implements AnalyticsService {
         'parameters': parameters,
       });
     } on PlatformException catch (e) {
-      print("Failed to send analytics event: '${e.message}'.");
+      log("Failed to send analytics event: '${e.message}'.");
     }
   }
 }

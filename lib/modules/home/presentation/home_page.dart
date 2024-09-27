@@ -58,6 +58,17 @@ class _HomePageState extends BasePage<HomePage, HomeViewmodel> {
     super.dispose();
   }
 
+  void _viewHeroDetails(Character character) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => DetailsHeroPage(
+          character: character,
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
@@ -129,7 +140,9 @@ class _HomePageState extends BasePage<HomePage, HomeViewmodel> {
               final character = viewmodel.state.characters.value[index];
               return SizedBox(
                   width: (width - 16) / 2,
-                  child: _buildCharacterCard(character));
+                  child: InkWell(
+                      onTap: () => _viewHeroDetails(character),
+                      child: _buildCharacterCard(character)));
             },
           ),
         ),
@@ -221,16 +234,7 @@ class _HomePageState extends BasePage<HomePage, HomeViewmodel> {
                   itemBuilder: (context, index) {
                     final character = characters[index];
                     return InkWell(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => DetailsHeroPage(
-                                character: character,
-                              ),
-                            ),
-                          );
-                        },
+                        onTap: () => _viewHeroDetails(character),
                         child: _buildCharacterCard(character));
                   },
                 ),
