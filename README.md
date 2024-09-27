@@ -1,4 +1,4 @@
-# SuperheroisUm aplicativo Flutter para descobrir e explorar seus super-heróis favoritos da Marvel.
+# Superherois Um aplicativo Flutter para descobrir e explorar seus super-heróis favoritos da Marvel.
 
 ## Descrição
 
